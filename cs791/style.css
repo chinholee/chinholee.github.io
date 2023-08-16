@@ -21,16 +21,18 @@ padding-bottom: 10px;
 }
 
 h2{
-  font-size: 24pt;
+  font-family: 'Roboto';
+  font-size: 26pt;
   color: #A30000;
+  margin: 0px;
 }
 
 h3 {
   font-family: 'Roboto';
   font-size: 24pt;
   color: #004777;
-  padding-top: 5px;
-  padding-bottom: 4px;
+  padding-top: 15px;
+  padding-bottom: 5px;
   margin: 0px;
 }
 
