@@ -1,0 +1,67 @@
+body {
+	width: 800px;
+	margin: 10px auto;
+	font-family: 'Lora', 'Roboto Condensed', 'arial narrow', georgia;
+	font-size: 16pt;
+  text-align: justify;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 5px;
+}
+
+li {
+	padding-top: 3px;
+	padding-bottom: 10px;
+}
+
+h2{
+  font-size: 24pt;
+	color: #A30000;
+}
+
+h3 {
+  font-family: 'Roboto';
+  font-size: 24pt;
+	color: #004777;
+	padding-top: 5px;
+	padding-bottom: 4px;
+	margin: 0px;
+}
+hr {
+  border-color: #000000;
+}
+
+.item{
+	color: #004777; 
+	font-weight: bold;
+}
+
+.title {
+	color: #A30000; 
+}
+
+#top {
+	padding: 0px;
+}
+
+#bottom {
+	padding: 0px;	
+}
+
+a:link {color: #00AFB5; text-decoration: none; }
+a:hover {color: #FF7700; text-decoration: none; }
+/*a:visited {color: #E7E6F7; text-decoration: none; } */
+
+
+/*
+ * Indigo dye: 004777
+ * Turkey red: A30000
+ * Safty orange: FF7700
+ * Lavender: E7E6F7
+ * Verdigris: 00AFB5
+ * */

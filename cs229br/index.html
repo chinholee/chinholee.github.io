@@ -1,0 +1,267 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>CS229BR - Analysis of Boolean Functions (Fall 2022)</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+<link rel="stylesheet" href="style.css" type="text/css">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+<h2>CS229BR - Analysis of Boolean Functions (Fall 2022)</h2>
+
+<h3>Course information</h3>
+Instructor: <a href="../">Chin Ho Lee</a> (he/him) (chlee@seas.harvard.edu)<br/>
+TF: <a href="https://juspreetsandhu.me/">Juspreet Singh Sandhu</a> (jus065@g.harvard.edu)<br/>
+Lectures: Tuesdays and Thursdays 3:45pm-5:00pm<br/>
+Location: SEC 1.402<br/>
+Office hours: <br/>
+&nbsp;&nbsp;Chin: Mondays and Thursday 1-2pm @ <a href="./LL1.201.pdf">SEC LL1.201</a>, or by appointment<br/>
+&nbsp;&nbsp;Juspreet: Tuesdays 1-2pm @ SEC 3.317 (Theory lounge)<br/>
+Canvas: <a href="https://canvas.harvard.edu/courses/108327">Link</a><br/>
+Discussion: <a href="https://edstem.org/us/courses/26999/">Ed</a> <br/>
+Homework submisson: <a href="https://harvard-cs229br-22f.hotcrp.com/">HotCRP</a><br/>
+
+<br/>
+Follow this <a href="https://calendar.google.com/calendar/embed?src=c_riop586ontt83em88ef17e617g%40group.calendar.google.com&ctz=America%2FNew_York">Google calendar</a> for the most updated schedule.
+
+  <br/>
+
+<h3>Course description</h3>
+Boolean functions are basic objects of study in theoretical computer science. This course will cover fundamental concepts and techniques in the analysis of Boolean functions, including influence and noise sensitivity, random restrictions, polynomial approximation, and hypercontractivity. We will see applications to various areas in theoretical computer science and mathematics, including circuit complexity, pseudorandomness, learning theory, and combinatorics.
+
+
+<h3>Announcement</h3>
+<ul>
+  <li>09/17/2022 - Course announcements are now on <a href="https://edstem.org/us/courses/26999/">Ed</a>.  Please send me an email so that I can add you to the platform.</li>
+</ul>
+<!--
+  <li>09/16/2022 - <a href="https://www.overleaf.com/read/rwhzfvthvvwy">Homework 1</a> is out</li>
+  <li>09/07/2022 - My office hours will be held at <a href="./LL1.201.pdf">SEC LL1.201</a>, starting tomorrow (9/8)</li>
+  <li>09/06/2022 - If you are auditing the class, please send me an email so that I can add you on Ed discussion.</li>
+  <li>08/31/2022 - there will be no class tomorrow (9/1 Thursday).</li>
+  <li>08/17/2022 - course website is up.</li>
+</ul>
+-->
+
+<h3>Evaluation</h3>
+
+40% - 3-4 Problem sets <br/>
+50% - 1 Project<br/>
+10% - Peer-grading<br/>
+
+
+<h3>Textbook</h3>
+We will follow the textbook by Ryan O'Donnell, available for free <a href="https://arxiv.org/abs/2105.10386">here</a>.
+For material not covered by Ryan's book, notes and references will be provided.
+You are encouraged to scribe your own notes, though this is not required.
+
+<h3>Lectures</h3>
+<table class="table lectures">
+  <thead>
+    <tr>
+      <th>Number</th>
+      <th>Date</th>
+      <th>Topics</th>
+      <th>Notes</th>
+      <th>References</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>9/6</td>
+      <td>Introduction, Fourier expansion</td>
+      <td><a href="https://edstem.org/us/courses/26999/discussion/1763058">Ed</a></td>
+      <td>Chapters 1.1, 1.2, 1.3</td>
+    </tr><tr>
+      <td>2</td>
+      <td>9/8</td>
+      <td>Basic identities, Linearity testing</td>
+      <td><a href="https://edstem.org/us/courses/26999/discussion/1763058">Ed</a></td>
+      <td>Chapters 1.4 + Theorem 1.27, 1.6</td>
+    </tr><tr>
+      <td>3</td>
+      <td>9/13</td>
+      <td>Linearity testing, Social choice theory</td>
+      <td><a href="https://edstem.org/us/courses/26999/discussion/1763058">Ed</a></td>
+      <td>Chapters 2.1</td>
+    </tr><tr>
+      <td>4</td>
+      <td>9/15</td>
+      <td>Influence</td>
+      <td><a href="https://edstem.org/us/courses/26999/discussion/1763058">Ed</a></td>
+      <td>Chapters 2.2</td>
+    </tr><tr>
+      <td>5</td>
+      <td>9/20</td>
+      <td>Total Influence, Sensitivity, Noise Stability</td>
+      <td><a href="https://edstem.org/us/courses/26999/discussion/1763058">Ed</a></td>
+      <td>Chapters 2.3, 2.4</td>
+    </tr><tr>
+      <td>6</td>
+      <td>9/22</td>
+      <td>Low-degree functions</td>
+      <td><a href="https://edstem.org/us/courses/26999/discussion/1763058">Ed</a></td>
+      <td>Chapters 3.1, 3.2</td>
+    </tr><tr>
+      <td>7</td>
+      <td>9/27</td>
+      <td>Learning low-degree functions</td>
+      <td><a href="https://edstem.org/us/courses/26999/discussion/1763058">Ed</a></td>
+      <td>Chapters 3.4, 3.3, 3.5</td>
+    </tr><tr>
+      <td>8</td>
+      <td>9/29</td>
+      <td>Goldreich-Levin theorem, Kushilevitz-Mansour algorithm</td>
+      <td><a href="https://edstem.org/us/courses/26999/discussion/1763058">Ed</a></td>
+      <td>Chapters 3.5, 4.1</td>
+    </tr><tr>
+      <td>9</td>
+      <td>10/4</td>
+      <td>Random restrictions, Switching Lemma</td>
+      <td><!--<a href="https://edstem.org/us/courses/26999/discussion/1763058">Ed</a>--></td>
+      <td>Chapters 4.3, 4.4</td>
+    </tr><tr>
+      <td>10</td>
+      <td>10/6</td>
+      <td>Switching Lemma</td>
+      <td><a href="https://edstem.org/us/courses/26999/discussion/1763058">Ed</a></td>
+      <td></td>
+    </tr><tr>
+      <td>11</td>
+      <td>10/11</td>
+      <td>Multi-Switching Lemma</td>
+      <td><a href="https://edstem.org/us/courses/26999/discussion/1763058">Ed</a></td>
+      <td></td>
+    </tr><tr>
+      <td>12</td>
+      <td>10/13</td>
+      <td>Multi-Switching Lemma, Low-degree concentration of DNF</td>
+      <td><a href="https://edstem.org/us/courses/26999/discussion/1763058">Ed</a></td>
+      <td>Chapter 4.4</td>
+    </tr><tr>
+      <td>13</td>
+      <td>10/18</td>
+      <td>Low-degree concentration of AC0</td>
+      <td><a href="https://edstem.org/us/courses/26999/discussion/1763058">Ed</a></td>
+      <td>Chapter 4.5</td>
+    </tr><tr>
+      <td>14</td>
+      <td>10/25</td>
+      <td>Bonami's lemma</td>
+      <td><a href="https://edstem.org/us/courses/26999/discussion/1763058">Ed</a></td>
+      <td>Chapter 9.1</td>
+    </tr><tr>
+      <td>15</td>
+      <td>10/27</td>
+      <td>Hypercontractivity, Small-set expansion</td>
+      <td><a href="https://edstem.org/us/courses/26999/discussion/1763058">Ed</a></td>
+      <td>Chapters 9.2, 9.5</td>
+    </tr><tr>
+      <td>16</td>
+      <td>11/1</td>
+      <td>Level-k inequality, FKN theorem</td>
+      <td><a href="https://edstem.org/us/courses/26999/discussion/1763058">Ed</a></td>
+      <td>Chapters 9.1, 9.5</td>
+    </tr><tr>
+      <td>17</td>
+      <td>11/3</td>
+      <td>KKL theorem</td>
+      <td><a href="https://edstem.org/us/courses/26999/discussion/1763058">Ed</a></td>
+      <td>Chapters 9.6</td>
+    </tr><tr>
+      <td>18</td>
+      <td>11/8</td>
+      <td>PRGs, k-wise independence</td>
+      <td><a href="https://edstem.org/us/courses/26999/discussion/1763058">Ed</a></td>
+      <td></td>
+    </tr><tr>
+      <td>19</td>
+      <td>11/10</td>
+      <td>bounded independence plus noise</td>
+      <td><a href="https://edstem.org/us/courses/26999/discussion/1763058">Ed</a></td>
+      <td></td>
+    </tr><tr>
+      <td>20</td>
+      <td>11/15</td>
+      <td>Polarizing random walk</td>
+      <td><a href="https://edstem.org/us/courses/26999/discussion/1763058">Ed</a></td>
+      <td></td>
+    </tr><tr>
+      <td>21<ctd>
+      <td>11/17</td>
+      <td>Polarizing random walk, Fourier growth</td>
+      <td><a href="https://edstem.org/us/courses/26999/discussion/1763058">Ed</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Homework</h3>
+You are required to typeset your solution using LaTeX.  <a href="https://www.overleaf.com/">Overleaf</a> is a popular online LaTeX editor.  For each problem set, you will also do some peer-grading. <br/>
+<br/>
+You are allowed to discuss homework questions with others in the class, only <em>after</em> spending some time on them on your own.  You must write down your <em>own</em> solutions, without consulting others while you are writing them.<br/>
+<ul>
+  <li><a href="https://www.overleaf.com/read/rwhzfvthvvwy">Homework 1</a> (due <strike>Sept 30</strike> Oct 5)</li>
+  <li><a href="https://www.overleaf.com/read/mqfqhgttyrsr">Homework 2</a> (due <strike>Oct 21</strike> Oct 31)</li>
+  <li><a href="https://www.overleaf.com/read/zbrqzjghfstn">Homework 3</a> (due Dec 2)</li>
+</ul>
+
+
+<h3>Project</h3> 
+The project consists of a proposal, a report and a presentation.
+You can work in groups of size at most 2, except when you group contains an undergraduate student who is enrolled in the class, then your group can be of size 3.
+Your project report should be about 8-page long.  If it exceeds 8 pages, the first 8 pages will be read but the rest may not.</br>
+
+<br/>
+
+
+The topics are open-ended.  You should cover some new material on the topic that is not in Ryan O'Donnell's book.
+Here are some suggestions:
+
+<ol>
+  <li>survey a research area and focus on how the analysis of Boolean functions is used;</li>
+  <li>learn about a technical lemma in a paper, present it in the simplest way as possible;</li>
+  <li>attack a research problem.  If you succeed, congratulations, write a paper and present it.  If not, summarize your attempts.  A list of open problems can be found <a href="https://simons.berkeley.edu/sites/default/files/openprobsmerged.pdf">here</a>.</li>
+</ol>
+
+I will suggest some topics and readings, but you are encouraged to choose a topic that excites you the most, or ask your advisors for suggestions. <br/>
+
+<h3>Tentative Topics</h3>
+<dl>
+  <dt>Basics</dt>
+  <dd>- Influence, Sensitivity</dd>
+
+  <dt>Learning</dt>
+  <dd>- Low-degree algorithm</dd>
+  <dd>- Goldreich-Levin theorem</dd>
+
+  <dt>Circuits</dt>
+  <dd>- Random restrictions</dd>
+  <dd>- Switching Lemmas</dd>
+  
+  <dt>Hypercontractivity</dt>
+  <dd>- Low-degree functions</dd>
+  <dd>- Isoperimetric inequalities</dd>
+  <dd>- Junta theorems</dd>
+
+  <dt>Pseudorandomness</dt>
+  <dd>- Bounded independence, small-bias space</dd>
+  <dd>- Bounded independence plus noise</dd>
+  <dd>- Fractional pseudorandom generators</dd>
+
+  <dt>Monotone functions</dt>
+  <dd>- Sunflower lemma</dd>
+  <dd>- Threshold phenomena</dd>
+</dl>
+
+
+
+<h3>Resources</h3>
+An exhaustive list of resources prepared by Li-yang Tan is available <a href="http://theory.stanford.edu/~liyang/teaching/aobf18-references.html">here</a>.
+
+</body>
+</html>

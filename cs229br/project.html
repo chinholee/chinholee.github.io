@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>CS229BR - Analysis of Boolean Functions (Fall 2022)</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+<style>
+body {
+/*width: 1200px;
+margin: 20px auto; */
+font-family: 'Roboto Condensed', 'arial narrow', georgia;
+font-size: 15pt;
+}
+
+dt {
+  color: #FF8C00;
+  list-style-type: none;
+  margin: 0px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 5px;
+}
+
+dd {
+padding-top: 3px;
+padding-bottom: 3px;
+}
+
+h2{
+font-size: 22pt;
+color: #033E6B;
+}
+
+a:link {color: #25567B; text-decoration: none; }
+a:hover {color: #66A3D2; text-decoration: none; }
+a:visited {color: #3F92D2; text-decoration: none; }
+</style>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head>
+<body>
+
+<h2>Project Ideas</h2>
+
+<dl>
+  <dt>Relation between different measures of Boolean functions</dt>
+  <dd>References in this table <a href="https://funcplot.com/table/">[Table]</a></dd>
+  <dd>Aaronson, Ben-David, Kothari, Rao, Tal - Degree vs. Approximate Degree and Quantum Implications of Huang's Sensitivity Theorem <a href="https://arxiv.org/abs/2010.12629">[arXiv]</a></dd>
+
+  <dt>Fourier analysis beyond the Boolean cube</dt>
+  <dd>Some papers by Yuval Filmus <a href="https://yuvalfilmus.cs.technion.ac.il/publications/papers/#8">[Homepage]</a> </dd>
+  <dd>Braverman, Khot, Lifshitz, Minzer - An Invariance Principle for the Multi-slice, with Applications <a href="https://arxiv.org/abs/2110.10725">[arXiv]</a></td>
+  <dd>Bafna, Hopkins, Kaufman, Lovett - Hypercontractivity on High Dimensional Expanders: a Local-to-Global Approach for Higher Moments <a href="https://arxiv.org/abs/2111.09444">[arXiv]</a></dd>
+  <dd>Gur, Lifshitz, Liu - Hypercontractivity on High Dimensional Expanders: Approximate Efron-Stein Decompositions for ε-Product Spaces <a href="https://arxiv.org/abs/2111.09375v4">[arXiv]</a></dd>
+
+  <dt>p-biased analysis</dt>
+  <dd>Keevash, Liftshitz, Long, Minzer - Global hypercontractivity and its applications <a href="https://arxiv.org/abs/2103.04604v1">[arXiv]</a></dd>
+
+  <dt>Resilient functions and collective coin-flipping protocols</dt>
+  <dd>Meka - Explicit resilient functions matching Ajtai-Linial <a href="https://arxiv.org/abs/1509.00092">[arXiv]</a></dd>
+  <dd>Filmus, Hambardzumyan, Hatami, Hatami, Zuckerman - Biasing Boolean Functions and Collective Coin-Flipping Protocols over Arbitrary Product Distribution <a href="https://arxiv.org/abs/1902.07426">[arXiv]</a>
+
+  <dt>Fourier growth and its applications</dt>
+  <dd>Chattopadhyay, Hatami, Lovett, Tal - Pseudorandom generators from the second Fourier level and applications to AC0 with parity gates <a href="https://eccc.weizmann.ac.il/report/2018/155/">[ECCC]</a></dd>
+  <dd>Sherstov, Storozhenko, and Wu - An optimal separation of randomized and quantum query complexity <a href="https://arxiv.org/abs/2008.10223">[arXiv]</a></dd>
+  <dd>Girish, Raz, Zhan - Lower Bounds for XOR of Forrelations <a href="https://arxiv.org/pdf/2007.03631.pdf">[arXiv]</a></dd>
+  <dd>Girish, Tal, Wu - Fourier Growth of Parity Decision Trees <a href="https://arxiv.org/abs/2103.11604">[arXiv]</a></dd>
+
+  <dt>Regularity lemmas and their applications</dt>
+  <dd>Jones - A Noisy-Influence Regularity Lemma for Boolean Functions <a href="https://arxiv.org/abs/1610.06950">[arXiv]</a></dd>
+  <dd>De, Nadimpalli, Servedio - Approximating Sumset Size <a href="https://arxiv.org/abs/2107.12367">[arXiv]</a></dd>
+  <dd>Chase, Filmus, Minzer, Mossel, Saurabh - Approximate Polymorphisms <a href="https://arxiv.org/abs/2106.00093">[arXiv]</a></dd>
+
+  <dt>Correlation bounds against GF(2) polynomials</dt>
+  <dd>Chattopadhyay, Hatami, Hosseini, Lovett, Zuckerman - XOR Lemmas for Resilient Functions Against Polynomials <a href="https://eccc.weizmann.ac.il/report/2019/145/">[ECCC]</a></dd>
+  <dd>Ivanov, Pavlovic, Viola - On correlation bounds against polynomials <a href="https://eccc.weizmann.ac.il/report/2022/092/">[ECCC]</a></dd>
+  <dd>Lovett, Mukhopadhyay, Shpilka - Pseudorandom generators for CC0[p] and the Fourier spectrum of low-degree polynomials over finite fields <a href="https://eccc.weizmann.ac.il/report/2010/033/">[ECCC]</a></dd>
+
+  <dt>Streaming CSPs</dt>
+  <dd>Chou, Golovnev, Sudan, Velusamy - Approximability of all finite CSPs with linear sketches <a href="https://arxiv.org/pdf/2105.01161">[arXiv]</a></dd>
+  <dd>Chou, Golovnev, Sudan, Velingker, Velusamy - Linear Space Streaming Lower Bounds for Approximating CSPs <a href="https://arxiv.org/abs/2106.13078">[arXiv]</a></dd>
+
+  <dt>Monotonicity testing</dt>
+  <dd>Chen, Waingarten, Xie - Beyond Talagrand Functions: New Lower Bounds for Testing Monotonicity and Unateness <a href="https://arxiv.org/abs/1702.06997">[arXiv]</a></dd>
+  <dd>Khot, Minzer, Safra - On Monotonicity Testing and Boolean Isoperimetric type Theorems <a href="https://eccc.weizmann.ac.il/report/2015/011/">[ECCC]</a></dd>
+  <dd>Belovs, Blais - A Polynomial Lower Bound for Testing Monotonicity <a href="https://arxiv.org/abs/1511.05053">[arXiv]</a></dd>
+  
+  <dt>Junta learning and testing</dt>
+  <dd>Iyer, Tal, Whitmeyer - Junta Distance Approximation with Sub-Exponential Queries <a href="https://arxiv.org/abs/2106.00287">[arXiv]</a></dd>
+  <dd>Valiant - Finding Correlations in Subquadratic Time, with Applications to Learning Parities and Juntas with Noise <a href="https://eccc.weizmann.ac.il/report/2012/006">[ECCC]</a></dd>
+
+  <dt>Higher-order Goldreich-Levin theorems</dt>
+  <dd>Tulsiani, Wolf - Quadratic Goldreich-Levin Theorems <a href="https://arxiv.org/abs/1105.4372">[arXiv]</a></dd>
+  <dd>Kim, Li, Tidor - Cubic Goldreich-Levin <a href="https://arxiv.org/abs/2207.13281">[arXiv]</a></dd>
+
+  <dt>Polynomial approximation and its applications</dt>
+  <dd>Sherstov - Making Polynomials Robust to Noise <a href="https://theoryofcomputing.org/articles/v009a018/">[Journal]</a></dd>
+  <dd>Sherstov - The approximate degree of DNF and CNF formulas <a href="https://eccc.weizmann.ac.il/report/2022/123/"</a>[ECCC]</a>
+  <dd>Bogdanov, Dinesh, Filmus, Ishai, Kaplan, Srinivasan - Bounded Indistinguishability for Simple Sources <a href="https://eccc.weizmann.ac.il/report/2021/093/">[ECCC]</a>
+  <dd>Anshu, Arad, Gosset - An area law for 2D frustration-free spin systems <a href="https://arxiv.org/abs/2103.02492">[arXiv]</a></dd>
+
+  <dt>Fourier-Entropy Conjecture</dt>
+  <dd>Gil Kalai's blogpost <a href="https://terrytao.wordpress.com/2007/08/16/gil-kalai-the-entropyinfluence-conjecture/">[Blogpost]</a>
+  <dd>Kelman, Kindler, Lifshitz, Minzer, Safra - Towards a Proof of the Fourier--Entropy Conjecture? <a href="https://arxiv.org/abs/1911.10579">[arXiv]</a></dd>
+
+  <dt>Mansour's Conjecture</dt>
+  <dd>Lecomte, Tan - Sharper bounds on the Fourier concentration of DNFs <a href="https://arxiv.org/abs/2109.04525">[arXiv]</a></dd>
+
+  <dt>Aaronson-Ambainis Conjecture</dt>
+  <dd>Scott Aaronson's blogpost <a href="https://scottaaronson.blog/?p=4414">[Blogpost]</a></dd>
+  <dd>Bansal,  Sinha, Wolf - Influence in Completely Bounded Block-multilinear Forms and Classical Simulation of Quantum Algorithms <a href="https://arxiv.org/abs/2203.00212">[arXiv]</a></dd>
+  <dd>Lovett, Zhang - Fractional certificates for bounded functions <a href="https://eccc.weizmann.ac.il/report/2022/107/">[arXiv]</a></dd>
+
+  <dt>Other topics and references</dt>
+  <dd>List of open problems <a href="https://simons.berkeley.edu/sites/default/files/openprobsmerged.pdf">[Simons]</a>
+  <dd>List of resources by Li-yang Tan <a href="http://theory.stanford.edu/~liyang/teaching/aobf18-references.html">[Webpage]</a>
+</dl>
+
+
+</body>
+</html>
