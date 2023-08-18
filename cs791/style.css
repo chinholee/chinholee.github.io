@@ -36,9 +36,14 @@ h3 {
   margin: 0px;
 }
 
-dd {
+dt {
+  margin-left: 20px;
   display: list-item;
   list-style-type: disc;
+}
+dd {
+  display: list-item;
+  list-style-type: square;
 }
 
 th, td {
@@ -48,7 +53,6 @@ th, td {
 
 .item{
 	color: #A30000; 
-	font-weight: bold;
 }
 
 
