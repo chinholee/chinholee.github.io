@@ -1,0 +1,279 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>CSC 707 - Automata, Languages and Computability Theory (Spring 2024)</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+<link rel="stylesheet" href="style.css" type="text/css">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+<h1>CSC 707  - Automata, Languages and Computability Theory (Spring 2024)</h1>
+
+<h2>Course information</h2>
+<span class="item">Instructor:</span> <a href="../">Chin Ho Lee</a> (he/him) (chinho.lee@ncsu.edu)<br/>
+<span class="item">Lectures:</span> Tuesdays and Thursdays 4:30pm-5:45pm<br/>
+<span class="item">Location:</span> EB2 1220<br/>
+<span class="item">Office hours:</span> TBD @ EB2 3292, or by appointment<br/>
+<br/>
+<span class="item">Links:</span> <a href="https://docs.google.com/document/d/1w26BAMDQ44BGgDfzfaCjtRkrXKdX5fg0/edit?usp=sharing&ouid=106570038767732349806&rtpof=true&sd=true">Syllabus</a> | <a href="https://edstem.org/us/courses/50073/">Ed</a> | <a href="https://app.perusall.com/courses/csc-707-001-spring-2024-automata-languages-and-computability-theory">Perusall</a> | <a href="https://www.gradescope.com/courses/680600/">Gradescope</a> | <a href="https://calendar.google.com/calendar/u/1?cid=Y19mYzk4MmNhZjg2ZmM0YWZkNzI1ZDMxMDc5Mzc2OTc0YjA1MThjMjJiYjczNTI1NmY0OWQ0NWVlMjEzYmE5OTE3QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20">Calendar</a>
+<br/><br/>
+Course announcements are on <a href="https://edstem.org/us/courses/41765/">Ed</a>.  You may sign up <a href="https://edstem.org/us/join/eX3qFv">here</a>, or send me an email so that I can add you to the platform.<br/>
+<span style="color: red;">If you cannot register this course because of prerequisites or other reasons, please send me an email.</span>
+<hr/>
+
+<div id="toc">
+  <a href="#description">Course Description</a> | <a href="#evaluation">Evaluation</a> | <a href="#schedule">Schedule</a> | <a href="#resources">Resources</a>
+</div>
+
+<hr/>
+
+<div id="description">
+  <h2>Course description</h2>
+  <p>
+  A basic question in computer science is to understand what tasks can be computed efficiently.  For example, can we compute a task (e.g. factoring an integer) using limited resources (e.g. in polynomial time)?</p>
+  <p>Computational complexity studies the power and limitations of computation given bounded resources such as time, space, randomness, communication, parallelism, and their trade-offs.  For example, is verifying a solution/proof as hard as finding one (non-determinism vs. determinism)?  When is randomness necessary (randomness vs. determinism)?  Can sequential computation be made parallel?</p>
+  
+  <p>This course will explore these questions by studying various concrete computational models such as Turing machines, Boolean circuits, and Interactions.
+  We will cover several classic, surprising, and beautiful results and techniques in this area, and highlight how they brought new insights to other areas such as cryptography and optimization.</p>
+  
+  <h3>Prerequisites and Homework 0</h3>
+  <p>This is a PhD-level course.  While there is no hard prerequisite, to follow the class, you are expected to be familiar with topics covered in Discrete Math (CSC 226), Algorithms (CSC 316) and Automata theory (CSC 333).
+  In particular, it is important to refresh your memory on the following concepts:</p>
+  <ul>
+    <li>Big-O notation and basic analysis of algorithms.</li>
+    <li>Basic counting and graph theory.</li>
+    <li>Reading and writing proofs.  As with every theory course, you will encounter many proofs in class and will be required to write proofs in homework and exam.</li>
+    <li>Basics of Turing Machines, decidability, non-determinism, NP-completeness.</li>
+  </ul>
+  <p>
+  You are encouraged to solve the optional Homework 0 before coming to class.  We will discuss the solution in the first lecture.
+  </p>
+  <h3>Textbook</h3>
+  <p>We will mainly follow the book [AB] "Computational complexity: a modern approach" by Arora and Barak (with a web addendum <a href="https://theory.cs.princeton.edu/uploads/Compbook/accnexp.pdf">here</a>), with some simpler arguments taken from other <a href="#resources">resources</a>.  It is available online <a href="https://proxying.lib.ncsu.edu/index.php?url=https://doi.org/10.1017/CBO9780511804090">here</a> (via NCSU libraries).  There is also a hardcopy at the Hunt Library.  Additional reading material can be found in the <a href="#resources">Resources</a> section.
+  </p>
+</div>
+
+<hr/>
+
+<div id="evaluation">
+  <h2>Evaluation</h2>
+  <ul>
+    <li>10% <a href="#participation">Class Participation</a></li>
+    <li>20% <a href="#scribe">Scribe (2 lectures)</a></li>
+    <li>50% <a href="#hw">Homework (4 problem sets)</a></li>
+    <li>20% <a href="#hw">Final exam (Take-home)</a></li>
+  </ul>
+  
+  <div id="participation">
+    <h3>Class Participation</h3>
+    <p>Any of the following activities can be counted towards class participation:</p>
+    <ul>
+      <li>Class attendance is expected but not mandatory.</li>
+      <li>Participation on Ed and Perusall.  You are expected to read and comment on some short readings/questions posted on Perusall before coming to class.  For example, you can 
+      <ul>
+        <li class="sq">point out anything you find particularly confusing or interesting</li>
+        <li class="sq">summarize an argument according to your own understanding</li>
+        <li class="sq">spell out a high-level argument in detail</li>
+        <li class="sq">point out possible connections to other topics/areas</li>
+        <li class="sq">suggest potential improvement/questions</li>
+      </ul>
+      You may choose to comment anonymously (to the class except me).  These comments will help me better prepare the lectures.
+    </ul>
+  </div>
+  <div id="scribe">
+    <h3>Scribe and More</h3>
+    <p>Each student will help prepare scribe notes for 2 lectures and address any questions related to them.  These notes will be shared on Perusall as a resource for your everyone in class to learn the material.</p>
+    <dt>1.  Scribe</dt>
+    <dd>You will scribe notes for 2 lectures using LaTex. (A signup sheet will be available after the first class.)
+    One goal of these notes is to provide a concise and accessible exposition of the lecture content so that other students can refer to after the lectures.
+    Another goal is to complete and clarify the hand-wavy/sketchy/confusing parts of the lectures.
+    You are encouraged to use outside sources such as other lecture notes, surveys, and papers to make your notes accessible, but you should understand the material well enough to write down everything in your own words, as you will be asked to explain the material to other students later on.  You should make use of office hours to discuss any questions you may have on the lecture when preparing your notes.
+    <ul>
+      <li>Your scribe notes should fit in 3-4 pages, and must not exceed 4 pages, in the template provided.</li>
+      <li>Turn in a draft of your scribe <span class="days">within 5 days</span> after the lecture.</li>
+      <li>Turn in a final version of your note <span class="days">within 3 days</span> after receiving feedback from me.</li>
+    </ul>
+    </dd>
+    <dt>2. Answer questions related to the lecture on Perusall and Ed</dt>
+    <dd>
+    To show your understanding of the 2 scribe notes you write, you will be asked (or tagged) to address any questions/comments posted by others on the related material (e.g. readings, scribe notes) on Perusall and Ed after the scribe notes are posted.
+    </dd>
+  </div>
+  
+  <div id="hw">
+    <h3>Homework and Exam</h3>
+    <p>There will be 4-6 questions for each problem set.  You have <span class="days">3 weeks</span> to complete each of them.  You are required to typeset your solution using LaTeX.  <a href="https://www.overleaf.com/">Overleaf</a> is a popular online LaTeX editor.</p>
+    <p><b>Homework policy:</b></p>
+    <p>
+    You are encouraged to discuss homework questions with others in the class, but only <em>after</em> spending some time (~20 mins) on each question on your own.  You must write down your <em>own</em> solutions, without consulting others while you are writing them.  If you are not sure about what a question is asking, you should ask on Ed immediately.
+    </p>
+    <p>
+    Each student has <span class="days">8 late days</span> for homework submission for the whole semester, of which you can use up to <span class="days">5 days</span> on any problem set.
+    Each late day is exactly 24 hours and cannot be subdivided, that is, a 5-minute late is counted as 1 late day.
+    No request is required for these 8 late days, but any extension request beyond them will be subject to <a href="https://dasa.ncsu.edu/support-and-advocacy/find-help/absence-notification/">Academic Absence Verification</a>.
+    When late days are used up and a problem set is submitted L days late, the grade for that problem set will be multiplied by 0.9<sup>L</sup>.
+    No problem set will be accepted after <span class="days">10 days</span> have elapsed from the initial due date.
+    </p>
+    <p><b>Final exam policy:</b></p>
+    <p>You are <em>not</em> allowed to discuss the final exam with others and must work on the final exam on your own.  There is <em>no late day</em> for final exam submission.  Any extension request will be subject to <a href="https://dasa.ncsu.edu/support-and-advocacy/find-help/absence-notification/">Academic Absence Verification</a>.</p>
+  
+    <p><b>Regrade policy:</b></p>
+    <p>If you dispute the grade received for a problem set, you must submit, in writing through Gradescope, a detailed and clearly stated argument for what you believe is incorrect and why, within <span class="days">7 days</span> after the homework was returned to you.</p>
+  <!-- This must be submitted no later than one week after the assignment was returned. (For example, if the assignment were returned to the class on Tuesday, your regrade request would have to be submitted before the next Tuesday.) Requests for a re-grade after this time will not be accepted. A written response will be provided within one week indicating your final score. Requests of re-grade of a specific problem may result in a regrade of the entire assignment. This re-grade and written response is final. Keep in mind that a re-grade request may result in the overall score for an assignment being lowered.
+  -->
+  </div>
+</div>
+
+<hr/>
+
+<div id="schedule">
+  <h2>Schedule</h2>
+  <p>The following tentative schedule is subject to change according to the pace and interest of the class.
+  <div id="schedule" style="padding-left: 40px">
+    <table width="1024px">
+      <thead>
+        <tr>
+          <th width="10%">Number</th>
+          <th width="15%">Date</th>
+          <th width="75%">Topics</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>1/9</td>
+          <td>Logistics, Topics preview, HW0</td>
+        </tr><tr>
+          <td>2</td>
+          <td>1/11</td>
+          <td>Turing machines</td>
+        </tr><tr>
+          <td>3</td>
+          <td>1/16</td>
+          <td>P, NP, Reductions, Cook-Levin theorem</td>
+        </tr><tr>
+          <td>4</td>
+          <td>1/18</td>
+          <td>Hierarchy theorems and Padding</td>
+        </tr><tr>
+          <td>5</td>
+          <td>1/23</td>
+          <td>Ladner's theorem, Polynomial Hierarchy</td>
+        </tr><tr>
+          <td>6</td>
+          <td>1/25</td>
+          <!-- <td>Oracles</td> -->
+          <td>Oracles, Baker-Gill-Solovay</td>
+        </tr><tr>
+          <td>7</td>
+          <td>1/30</td>
+          <td>Time-space tradeoff</td>
+        </tr><tr>
+          <td>8</td>
+          <td>2/1</td>
+          <td>Non-uniformity, Circuits</td>
+        </tr><tr>
+          <td>9</td>
+          <td>2/6</td>
+          <td>Karp-Lipton theorem</td>
+        </tr><tr>
+          <td>10</td>
+          <td>2/8</td>
+          <td>Space complexity, NSPACE vs. DSPACE</td>
+        </tr><tr>
+          <td>11</td>
+          <td>2/15</td>
+          <td>L, NL, PSPACE-completeness</td>
+          <td></td>
+        </tr><tr>
+          <td>12</td>
+          <td>2/20</td>
+          <td>Complement of NSPACE</td>
+        </tr><tr>
+          <td>13</td>
+          <td>2/22</td>
+          <td>Probability Basics, Randomized algorithms</td>
+        </tr><tr>
+          <td>14</td>
+          <td>2/27</td>
+          <td>Error reduction, Randomized complexity classes</td>
+        </tr><tr>
+          <td>15</td>
+          <td>2/29</td>
+          <td>Randomness vs. Non-uniformity<!-- : BPP \subseteq P/poly --></td>
+        </tr><tr>
+          <td>16</td>
+          <td>3/5</td>
+          <td>Randomness vs. PH<!-- Sipser–Gács–Lautemann theorem --></td>
+        </tr><tr>
+          <td>17</td>
+          <td>3/7</td>
+          <td>Interactive proofs</td>
+        </tr><tr>
+          <td>18</td>
+          <td>3/19</td>
+          <td>Arthur-Merlin protocols</td>
+        </tr><tr>
+          <td>19</td>
+          <td>3/21</td>
+          <td>Arithmetization, Random self-reducibility</td>
+        </tr><tr>
+          <td>20</td>
+          <td>3/26</td>
+          <td>IP = PSPACE</td>
+        </tr><tr>
+          <td>21</td>
+          <td>3/28</td>
+          <td>Probabilistic Checkable Proofs and Hardness of approximation</td>
+        </tr><tr>
+          <td>22</td>
+          <td>4/2</td>
+          <td>Decision Tree Complexity</td>
+        </tr><tr>
+          <td>23</td>
+          <td>4/4</td>
+          <td>Formulas vs. Space</td>
+        </tr><tr>
+          <td>24</td>
+          <td>4/9</td>
+          <td>Communication Complexity</td>
+        </tr><tr>
+          <td>25</td>
+          <td>4/11</td>
+          <td>Turing machine and formula lower bounds</td>
+        </tr><tr>
+          <td>26</td>
+          <td>4/16</td>
+          <td>Small-depth circuits</td>
+        </tr><tr>
+          <td>27</td>
+          <td>4/18</td>
+          <td>TBD</td>
+        </tr><tr>
+          <td>28</td>
+          <td>4/23</td>
+          <td>TBD</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<hr/>
+
+<div id="resources">
+  <h2>Resources</h2>
+  <p>The following supplementary readings provide a more detailed account, or a different take, on the topics covered in this course.</p>
+  <ul>
+    <li>[Papadimitriou] C. Papadimitriou.  Computational Complexity.</li>
+    <li>[Sipser] M. Sipser.  Introduction to the Theory of Computation.  (Available from various sources on the internet.)</li>
+    <li>[Wigderson] A. Wigderson.  Mathematics and Computation.  (Draft version available <a href=" https://www.math.ias.edu/files/Book-online-Aug0619.pdf">here</a>.)</li>
+    <li>[Viola] E. Viola.  Mathematics of the Impossible (Draft).  (Available <a href="https://www.khoury.northeastern.edu/home/viola/papers/moti.pdf">here</a>.)</li>
+  </ul>
+</div>
+<a class="top" href="#">Top</a>
+</body>
+</html>
