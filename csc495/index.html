@@ -1,0 +1,290 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>CSC 495 - Algorithms (Fall 2024)</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+<link rel="stylesheet" href="style.css" type="text/css">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+<h1>CSC 495 - <strike>Advanced</strike> Algorithms (Fall 2024)</h1>
+
+<h2>Course information</h2>
+<span class="item">Instructor:</span> <a href="../">Chin Ho Lee</a> (he/him) (chinho.lee@ncsu.edu)<br/>
+<span class="item">Lectures:</span> Tuesdays and Thursdays 4:30pm-5:45pm<br/>
+<span class="item">Location:</span> EB2 1212<br/>
+<span class="item">Office hours:</span> TBD<br/>
+<span class="item">TA/Grader:</span>TBD<br/>
+<span class="item">TA/Grader office Hours:</span>TBD<br/>
+<br/>
+<span class="item">Links:</span> <a href="https://docs.google.com/document/d/1cBkvLnvhUwkehQcnB8jc8x36T50V0a-J/edit#heading=h.gjdgxs">Syllabus</a> | <a href="https://edstem.org/us/courses/60865">Ed</a> | <a href="https://app.perusall.com/courses/csc495-advanced-algorithms/">Perusall</a> | <a href="">Gradescope</a> | <a href="https://calendar.google.com/calendar/u/1?cid=Y18zZDQ3ZDk1YzhiMTQ5NmVmZTQwZDkxZWQzZDM0NDc3Nzg1ODU1ZmQ2OGM2MDA5Yzg5ZjBjMzVhNzQwNDEyMGU3QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20">Calendar</a>
+<br/><br/>
+Course announcements are on <a href="https://edstem.org/us/courses/6086https://edstem.org/us/courses/608655">Ed</a>.  You may sign up <a href="">here</a>, or send me an email so that I can add you to the platform.<br/>
+<span style="color: red;">If you cannot register this course for any reason (e.g. waitlist), please send me an email.</span>
+<hr/>
+
+<div id="toc">
+  <a href="#description">Course Description</a> | <a href="#evaluation">Evaluation</a> | <a href="#schedule">Schedule</a> | <a href="#resources">Resources</a>
+</div>
+
+<hr/>
+
+<div id="description">
+  <h2>Course description</h2>
+  <p>
+  In this course, you will learn about (1) <em>how</em> to design <em>fast</em> algorithms, and (2) <em>why</em> they work <em>correctly</em>.
+  <p>
+  We will discuss several fundamental paradigms in designing algorithms, and how to rigorously argue their correctness.
+  In each paradigm, we will cover several important algorithms, highlight the common ideas shared by them, and see how to apply these algorithms to other seemingly unrelated problems.
+  </p>
+  <p>There is no programming in this course, but you can, and are encouraged to, attend the <a href="https://go.ncsu.edu/programming-contest">NCSU competitive programming practice</a> organized by Dr. David Sturgill, where you will learn how to implement many of the algorithms covered in this course and how to use them to solve other problems.  It can be taken as a course (CSC 295) and can be useful for job interviews.</p>
+  
+  <h3>Prerequisites and Homework 0</h3>
+  <p>You are expected to be familiar with topics covered in Discrete Math (CSC 226), Data structures and Algorithms (CSC 316).
+  In particular, it is important to refresh your memory on the following concepts before coming to class:</p>
+  <ul>
+    <li>Asymptotic notations (e.g. Big-O and Big-Omega)</li>
+    <li>Basic counting and graph theory</li>
+    <li>Proof techniques such as proof by contradiction, proof by induction, proof by counterexample (and NEVER by examples).  As with every theory course, you will encounter many proofs in class and will be required to write proofs in homeworks and exams.</li>
+  </ul>
+  <p>The free book "<a href="https://eng.libretexts.org/Bookshelves/Computer_Science/Programming_and_Computation_Fundamentals/Mathematics_for_Computer_Science_(Lehman_Leighton_and_Meyer)">Mathematics for Computer Science</a>" by Lehman, Leighton, and Meyer is an excellent resource for learning these concepts.  It also comes with a set of <a href="https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-fall-2010/">online lectures</a>.
+  <p>
+  To give you an idea of whether you have met the prerequisites, a <a href="#evaluation">Homework 0</a> will be assigned and graded before census day.
+  </p>
+  <h3>Textbook</h3>
+  <p>Slides will be provided.
+  A primary reference will be the textbook [CLRS] "<a href="https://catalog.lib.ncsu.edu/catalog/NCSU2290098">Introduction to Algorithms</a>" by Cormen, Leiserson, Rivest, and Stein.  An ebook can be accessed via NCSU libraries.
+  </p>
+</div>
+
+<hr/>
+
+<div id="evaluation">
+  <h2>Evaluation</h2>
+  <ul>
+    <li>10% <a href="">Homework 0</a></li>
+    <li>10% <a href="#participation">Class participation, including a 5-10-min presentation</a></li>
+    <li>40% <a href="#hw">Homework (5 problem sets, lowest grade among HW1-HW5 dropped)</a></li>
+    <li>15% <a href="#exam">Midterm exam</a></li>
+    <li>25% <a href="#exam">Final exam</a></li>
+  </ul>
+  
+  <div id="participation">
+    <h3>Class Participation</h3>
+    <p>Any of the following activities can be counted towards class participation:</p>
+    <ul>
+      <li>Class attendance is expected but not mandatory.</li>
+      <li>Participation on Ed and Perusall.
+        You are expected to take a look at the lecture slides on Perusall before coming to class.  You can, for example,
+      <ul>
+        <li class="sq">point out anything you find particularly confusing or interesting</li>
+        <li class="sq">summarize an argument according to your own understanding</li>
+        <li class="sq">suggest potential improvement or alternative solutions</li>
+      </ul>
+      You may choose to participate in the discussions anonymously (to the class except me and the TA).  These discussions will also help me better prepare the lectures.
+      <li>5-10-min presentation. Each student will help explain how an algorithm covered in class works by simulating it on a given example.  Slides will be given beforehand.  A sign-up sheet will be available at the beginning of the semester.</li>
+    </ul>
+  </div>
+  <div id="scribe">
+  </div>
+  
+  <div id="hw">
+    <h3>Homework and Exam</h3>
+    <p>There will be 4-6 questions for each problem set.  You have <span class="days">2 weeks</span> to complete each of them.
+    <p><b>Homework policy:</b></p>
+    <p>
+    You will submit your homework solution as a PDF to Gradescope.  You are strongly encouraged to typeset your solutions, but <em>clearly legible</em> handwritten solution will also be accepted.  To keep your solutions clear and concise, you should develop your solutions in draft form before writing/typing it down.  <a href="https://www.overleaf.com/">Overleaf</a> is a popular online editor for typesetting math equations.
+    </p>
+    <p>
+    You are encouraged to discuss homework questions with others in the class, but <em>only after</em> spending some reasonable amount of time (~30 mins) on each question on your own.  You must write down your <em>own</em> solutions in your own words, without consulting others while you are writing them.  You must list the names of your collaborators (if there are any) for each problem.
+    If you are not sure about what a question is asking, you should ask on Ed immediately.
+    </p>
+    <p>
+    Each student has a total of <span class="days">8 late days</span> for homework submission for the whole semester, of which you can use up to <span class="days">2 days</span> on any problem set.
+    Each late day is exactly 24 hours and cannot be subdivided, that is, a 5-minute late is counted as 1 late day.
+    No request is required for these 8 late days, but any extension request beyond them will be subject to <a href="https://dasa.ncsu.edu/support-and-advocacy/find-help/absence-notification/">Academic Absence Verification</a>.
+    When late days are used up and a problem set is submitted L days late, the grade for that problem set will be multiplied by 0.9<sup>L</sup>.
+    </p>
+    <p>
+    To ensure that homeworks are graded and solutions are posted in a timely-manner, no problem set will be accepted after <span class="days">4 days</span> have elapsed from the initial due date.
+    </p>
+    <p><b>Exam policy:</b></p>
+    <p>Exams must be taken in-person and cannot be taken virtually.  Any rescheduling request will be subject to <a href="https://dasa.ncsu.edu/support-and-advocacy/find-help/absence-notification/">Academic Absence Verification</a>.</p>
+  
+    <p><b>Regrade policy:</b></p>
+    <p>If you dispute the grade received for a problem set, you must submit, in writing through Gradescope, a detailed and clearly stated argument for what you believe is incorrect and why, within <span class="days">5 days</span> after the homework was returned to you.</p>
+    <p>All regrade requests will be reviewed by the instructor.  Requests of regrade of a specific problem may result in a regrade of the entire assignment.  This regrade and written response is final. Keep in mind that a regrade request may result in the overall score for an assignment being lowered.</p>
+  </div>
+</div>
+
+<hr/>
+
+<div id="schedule">
+  <h2>Schedule</h2>
+  <p>The following tentative schedule is subject to change according to the pace and interest of the class.
+  <!--
+  -->
+  <div id="schedule" style="padding-left: 40px">
+    <table width="1024px">
+      <thead>
+        <tr>
+          <th width="10%">Lecture</th>
+          <th width="15%">Date</th>
+          <th width="75%">Topics</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>0</td>
+          <td>8/20 (Tue)</td>
+          <td>Logistics, Topics preview</td>
+        </tr><tr>
+          <td>1</td>
+          <td>8/22 (Thu)</td>
+          <td>Computation model, "Time" complexity</td>
+        </tr><tr>
+          <td>2</td>
+          <td>8/27 (Tue)</td>
+          <td>TBD</td>
+        </tr><tr>
+          <td>3</td>
+          <td>8/29 (Thu)</td>
+          <td>TBD</td>
+        </tr><tr>
+          <td></td>
+          <td>8/30 (Friday)</td>
+          <td>Census Date</td>
+        </tr><tr>
+          <td>4</td>
+          <td>9/3 (Tue)</td>
+          <td>Divide and Conquer</td>
+        </tr><tr>
+          <td>5</td>
+          <td>9/5 (Thu)</td>
+          <td>Divide and Conquer</td>
+        </tr><tr>
+          <td>6</td>
+          <td>9/10 (Tue)</td>
+          <td>Graph algorithms</td>
+        </tr><tr>
+          <td>7</td>
+          <td>9/12 (Thu)</td>
+          <td>Graph algorithms</td>
+        </tr><tr>
+          <td></td>
+          <td>9/17 (Tue)</td>
+          <td>Wellness Day (No class)</td>
+        </tr><tr>
+          <td>8</td>
+          <td>9/19 (Thu)</td>
+          <td>Graph algorithms (<span class="em">HW1 due</span>)</td>
+        </tr><tr>
+          <td>9</td>
+          <td>9/24 (Tue)</td>
+          <td>Greedy algorithms</td>
+        </tr><tr>
+          <td>10</td>
+          <td>9/26 (Thu)</td>
+          <td>Greedy algorithms</td>
+        </tr><tr>
+          <td>11</td>
+          <td>10/1 (Tue)</td>
+          <td>Greedy algorithms</td>
+        </tr><tr>
+          <td>12</td>
+          <td>10/3 (Thu)</td>
+          <td>Dynamic Programming (<span class="em">HW2 due</a>)</td>
+        </tr><tr>
+          <td>13</td>
+          <td>10/8 (Tue)</td>
+          <td>Dynamic Programming</td>
+        </tr><tr>
+          <td>14</td>
+          <td>10/10 (Thu)</td>
+          <td><span class="em">Midterm exam</span></td>
+        </tr><tr>
+          <td></td>
+          <td>10/15 (Tue)</td>
+          <td>Fall break (No class)</td>
+        </tr><tr>
+          <td>15</td>
+          <td>10/17 (Thu)</td>
+          <td>Dynamic Programming</td>
+        </tr><tr>
+          <td>16</td>
+          <td>10/22 (Tue)</td>
+          <td>Dynamic Programming</td>
+        </tr><tr>
+          <td>17</td>
+          <td>10/24 (Thu)</td>
+          <td>Network flows (<span class="em">HW3 due</span>)</td>
+        </tr><tr>
+          <td>18</td>
+          <td>10/29 (Tue)</td>
+          <td>TBD</td>
+        </tr><tr>
+          <td>19</td>
+          <td>10/31 (Thu)</td>
+          <td>Network flows</td>
+        </tr><tr>
+          <td>20</td>
+          <td>11/5 (Tue)</td>
+          <td>Network flows</td>
+        </tr><tr>
+          <td>21</td>
+          <td>11/7 (Thu)</td>
+          <td>Randomized algorithms (<span class="em">HW4 due</span>)</td>
+        </tr><tr>
+          <td>22</td>
+          <td>11/12 (Tue)</td>
+          <td>Randomized algorithms</td>
+        </tr><tr>
+          <td>23</td>
+          <td>11/14 (Thu)</td>
+          <td>Randomized algorithms</td>
+        </tr><tr>
+          <td>24</td>
+          <td>11/19 (Tue)</td>
+          <td>Hard problems</td>
+        </tr><tr>
+          <td>25</td>
+          <td>11/21 (Thu)</td>
+          <td>Hard problems</td>
+        </tr><tr>
+          <td>26</td>
+          <td>11/26 (Tue)</td>
+          <td>Hard problems (<span class="em">HW5 due</span>)</td>
+        </tr><tr>
+          <td></td>
+          <td>11/28 (Thu)</td>
+          <td>Thanksgiving (No class)</td>
+        </tr><tr>
+          <td>27</td>
+          <td>12/3 (Thu)</td>
+          <td>TBD</td>
+        </tr><tr>
+          <td></td>
+          <td>TBD</td>
+          <td><span class="em">Final exam (to be scheduled)</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<hr/>
+
+<div id="resources">
+  <h2>Resources</h2>
+  <p>This is a standard course in most universities worldwide.  So an overwhelming amount of resources are available online.  The following textbooks provide a more detailed account, or a different take, on the topics covered in this course.</p>
+  <ul>
+    <li>[DPV] "Algorithms" by Dasgupta, Papadimitriou, and Vazirani</li>
+    <li>[KT] "Algorithm Design" by Kleinberg and Tardos  (<a href="https://www.cs.princeton.edu/~wayne/kleinberg-tardos/"</a>Lecture slides</a>)</li>
+  </ul>
+</div>
+<a class="top" href="#">Top</a>
+</body>
+</html>
