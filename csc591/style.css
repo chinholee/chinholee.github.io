@@ -1,60 +1,120 @@
-body {
+{
+  border: 1px dotted #BBBBBB; 
+}
 
-  width: 800px;
-  margin: 10px auto;
+body {
   font-family: 'Lora', 'Roboto Condensed', 'arial narrow', georgia;
   font-size: 16pt;
-  /*text-align: justify;*/
+  width: 1280px;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 5px;
+hr {
+  border-color: #000000;
 }
 
-li {
-padding-top: 3px;
-padding-bottom: 10px;
-}
 
-h2{
+h1 {
+  padding-top: 12px;
+  padding-bottom: 4px;
+  margin: 1px;
   font-family: 'Roboto';
   font-size: 26pt;
-  color: #A30000;
-  margin: 0px;
+  margin: 1px;
+}
+
+h2 {
+  padding-top: 10px;
+  padding-bottom: 3px;
+  margin: 1px;
+  font-family: 'Roboto';
+  font-size: 24pt;
 }
 
 h3 {
+  padding-top: 8px;
+  padding-bottom: 2px;
+  margin: 1px;
   font-family: 'Roboto';
-  font-size: 24pt;
-  color: #004777;
-  padding-top: 15px;
-  padding-bottom: 5px;
-  margin: 0px;
+  font-size: 18pt;
+}
+
+p {
+  margin: 1px;
+  padding-top: 7px;
+  padding-bottom: 3px;
+  padding-left: 20px;
+  padding-right: 30px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  padding: 5px;
+}
+
+tr:nth-child(odd)   { background-color: #FFFFFF; }
+tr:nth-child(even)    { background-color:#EEEEEE; }
+
+td {
+  margin: 1px;
+  border-top: solid;
+  padding: 5px;
 }
 
 dt {
-  margin-left: 20px;
-  display: list-item;
-  list-style-type: disc;
+  font-weight: bold;
+  padding-top: 7px;
+  padding-bottom: 3px;
+  padding-left: 20px;
 }
+
 dd {
-  display: list-item;
+  margin: 0px;
+  padding-top: 7px;
+  padding-left: 20px;
+  padding-bottom: 3px;
+  padding-right: 30px;
+}
+
+ul {
+  margin: 0px;
+  padding-left: 50px;
+}
+
+li {
+  margin-left: 0px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+  padding-right: 35px;
+}
+
+li.sq {
   list-style-type: square;
 }
 
-th, td {
-  padding-left: 5px;
-  padding-right: 8px;
+
+.item {
+  margin: 1px;
 }
 
-.item{
-	color: #A30000; 
+.days {
+  color: #0000FF;
+}
+
+.em{
+  color: #FF0000;
+}
+
+.top{
+  position: fixed;
+  bottom: 10px;
+  left: 1255px;
 }
 
 
-a:link {color: #00AFB5; text-decoration: none; }
-a:hover {color: #FF7700; text-decoration: none; }
+a:link {color: #1d71b5; text-decoration: none; }
+a:hover {color: #1d71b5; text-decoration: none; }
+a:visited{color: #ad5d02; text-decoration: none; }
