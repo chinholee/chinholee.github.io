@@ -13,7 +13,7 @@
 <h1>CSC 495/591 - CS Theory Toolkit (Spring 2025)</h1>
 
 <h2>Course information</h2>
-<span class="item">Instructor:</span> <a href="../">Chin Ho Lee</a> (he/him) (chinho.lee@ncsu.edu)<br/>
+<span class="item">Instructor:</span> <a href="../">Chin Ho Lee</a> (chinho.lee@ncsu.edu)<br/>
 <span class="item">Lectures:</span> Tuesdays and Thursdays 4:30pm-5:45pm<br/>
 <span class="item">Location:</span> Textiles Complex 2203<br/>
 <span class="item">Office hours: TBD, or by appointment</span><br/>
@@ -32,47 +32,249 @@
 
 <div id="description">
   <h2>Course description</h2>
-  <p>This course showcases how different areas of mathematics can be useful in computer science.  We will study several mathematical tools such as Algebra (Groups, Rings, Fields), Matrix theory, (Discrete) Probability, Fourier analysis, and see how they are used in developing modern algorithms and proving impossibility results in various areas in computer science.</p>
+  <p>This course showcases how different areas of mathematics can be useful in computer science.  We will study several mathematical tools such as Algebra (Fields, Polynomials), Matrix theory, (Discrete) Probability, Fourier analysis, and see how they are used in developing modern algorithms and proving impossibility results in various areas in computer science.</p>
   <p>This covers some of basic tools that would be useful for students who are interested in doing research in the theory side of computer science.</p>
   
-  <h3>Prerequisites and Homework 0</h3>
-  <p>You are expected to be familiar with topics covered in Discrete Math (CSC 226), Data structures and Algorithms (CSC 316).
+  <h3>Prerequisites</h3>
+  <p>You are expected to be familiar with basics in Discrete Math (CSC 226), Data structures and Algorithms (CSC 316).
   In particular, it is important to refresh your memory on the following concepts before coming to class:</p>
   <ul>
     <li>Asymptotic notations (e.g. Big-O and Big-Omega)</li>
-    <li>Basic counting and graph theory</li>
-    <li>Proof techniques such as proof by contradiction, proof by induction, proof by counterexample (and NEVER by examples).  As with every theory course, you will encounter many proofs in class and will be required to write proofs in homeworks and exams.</li>
+    <li>Basic counting, probability, and graph theory</li>
+    <li>Proof techniques such as proof by contradiction, proof by induction, proof by counterexample.  As with every theory course, you will encounter many proofs in class and will be required to write proofs in homeworks and exams.</li>
   </ul>
   <p>The free book "<a href="https://eng.libretexts.org/Bookshelves/Computer_Science/Programming_and_Computation_Fundamentals/Mathematics_for_Computer_Science_(Lehman_Leighton_and_Meyer)">Mathematics for Computer Science</a>" by Lehman, Leighton, and Meyer is an excellent resource for learning these concepts.  It also comes with a set of <a href="https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-fall-2010/">online lectures</a>.
-  <!--
-  <p>
-  To give you an idea of whether you have met the prerequisites, a <a href="#evaluation">Homework 0</a> will be assigned and graded before census day.
-  </p>
-  -->
 </div>
+
+  <h3>Textbook</h3>
+  <p>Notes and references will be provided.</p>
 
 <hr/>
 
 <div id="evaluation">
   <h2>Evaluation</h2>
-  <p>To be decided</p>
+  <ul>
+    <li>10% <a href="#participation">Participation</a></li>
+    <li>30% <a href="#hw">Homework</a></li>
+    <li>30% <a href="#exam">Midterm exam</a></li>
+    <li>30% <a href="#project">Project</a></li>
+  </ul>
+
+
+  <div id="hw">
+    <h3>Homework and Exam</h3>
+    <p>Questions will be regularly posted as individual threads on Ed. Everyone can answer and comment on any question except the designated ones (see next paragraph).  Any well-thought-out (possibly incorrect) answer will count towards your homework grade.  To keep your comments clear and concise, you should prepare them in draft on your own beforehand.  Your homework grade will be periodically updated on Moodle.</p>
+
+    <p>Some questions are assigned to students who are less active. If you are assigned such a question, you have <span class="days">5 days (excluding weekend)</span> to respond with an answer to that thread.  If you spend some reasonable amount of time and cannot make any progress, you should comment to the thread as soon as you can so that I can provide appropriate hints to guide you towards a solution.  Start early -- your grade for a question will be determined on day 5 (unless late days are applied).
+    </p>
+    <p><b>Homework policy:</b></p>
+    <p>
+    Each student has a total of <span class="days">4 late days</span> for their assigned questions for the whole semester, of which you can use up to <span class="days">2 days (including weekend)</span> on any question.  Each late day is exactly 24 hours and cannot be subdivided, e.g. a 5-minute late is counted as 1 late day.</p>
+
+    <p>No request is required for these 4 late days, but any extension request beyond them will be subject to <a href="https://dasa.ncsu.edu/support-and-advocacy/find-help/absence-notification/">Academic Absence Verification</a>.</p>
+
+    <p>If you rely on the assistance of an AI or others in class, you are solely responsible for any resulting mistakes.</p>
+
+    <p><b>Exam policy:</b></p>
+    <p>Exam must be taken in-person and cannot be taken virtually.  Any rescheduling request will be subject to <a href="https://dasa.ncsu.edu/support-and-advocacy/find-help/absence-notification/">Academic Absence Verification</a>.</p>
+  
+    <p><b>Regrade policy:</b></p>
+    <p>If you dispute the grade received for an exam question, you must submit, in writing through Gradescope, a detailed and clearly stated argument for what you believe is incorrect and why, within <span class="days">5 days</span> after the exam was returned to you.</p>
+    <p>Requests of regrade of a specific problem may result in a regrade of the entire assignment.  This regrade and written response is final. Keep in mind that a regrade request may result in the overall score for an assignment being lowered.</p>
+  </div>
+
+  <div id="project">
+    <h3>Project</h3>
+    <p>The project consists of a report and a 15-min presentation.  Your project report should be about at most 5-page long. If it exceeds 5 pages, the first 5 pages will be read but the rest may not.</p>
+
+    <p>More details will be announced after census day when the enrolment number has stablized. </p>
+  </div>
 </div>
 
 <hr/>
 
+
 <div id="schedule">
-  <h2>Tentative Topics</h2>
-  <ul>
-    <li>Hashing</li>
-    <li>Randomized algorithms</li>
-    <li>Sublinear algorithms</li>
-    <li>Communication complexity</li>
-  </ul>
+  <h2>Schedule</h2>
+  <p>The following tentative schedule is subject to change according to the pace and interest of the class.
+  <!--
+  -->
+  <div id="schedule" style="padding-left: 40px">
+    <table width="1024px">
+      <thead>
+        <tr>
+          <th width="10%">Lecture</th>
+          <th width="15%">Date</th>
+          <th width="45%">Topics</th>
+          <th width="30%"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>0</td>
+          <td>1/7 (Tue)</td>
+          <td>Hashing</td>
+          <td></td>
+        </tr><tr>
+          <td>1</td>
+          <td>1/9 (Thu)</td>
+          <td>Hashing</td>
+          <td></td>
+        </tr><tr>
+          <td>2</td>
+          <td>1/14 (Tue)</td>
+          <td>Min-cut</td>
+          <td></td>
+        </tr><tr>
+          <td>3</td>
+          <td>1/16 (Thu)</td>
+          <td>Min-cut</td>
+          <td><span class="em">(day before Census day)</span></td>
+        </tr><tr>
+          <td>4</td>
+          <td>1/21 (Tue)</td>
+          <td>Streaming algorithms</td>
+          <td></td>
+        </tr><tr>
+          <td>5</td>
+          <td>1/23 (Thu)</td>
+          <td>Streaming algorithms</td>
+          <td></td>
+        </tr><tr>
+          <td>6</td>
+          <td>1/28 (Tue)</td>
+          <td>Property Testing</td>
+          <td></td>
+        </tr><tr>
+          <td>7</td>
+          <td>1/30 (Thu)</td>
+          <td>Property Testing</td>
+          <td></td>
+        </tr><tr>
+          <td>8</td>
+          <td>2/4 (Tue)</td>
+          <td>Property Testing</td>
+          <td></td>
+        </tr><tr>
+          <td>9</td>
+          <td>2/6 (Thu)</td>
+          <td>Property Testing</td>
+          <td></td>
+        </tr><tr>
+          <td></td>
+          <td>2/11 (Tue)</td>
+          <td>Wellness Day (No class)</td>
+          <td></td>
+        </tr><tr>
+          <td>10</td>
+          <td>2/13 (Thu)</td>
+          <td>High-dimensional data compression</td>
+          <td></td>
+        </tr><tr>
+          <td>11</td>
+          <td>2/18 (Tue)</td>
+          <td>High-dimensional data compression</td>
+          <td></td>
+        </tr><tr>
+          <td>12</td>
+          <td>2/20 (Thu)</td>
+          <td>Error-correcting codes</td>
+          <td></td>
+        </tr><tr>
+          <td>13</td>
+          <td>2/25 (Tue)</td>
+          <td>Error-correcting codes</td>
+          <td></td>
+        </tr><tr>
+          <td>14</td>
+          <td>2/27 (Thu)</td>
+          <td><span class="em">Midterm exam</span></td>
+          <td></td>
+        </tr><tr>
+          <td>15</td>
+          <td>3/4 (Tue)</td>
+          <td>Error-correcting codes </td>
+          <td></td>
+        </tr><tr>
+          <td>16</td>
+          <td>3/6 (Thu)</td>
+          <td>Error-correcting codes</td>
+          <td><span class="em">(Project proposal due)</span></td>
+        </tr><tr>
+          <td></td>
+          <td>3/11 (Tue)</td>
+          <td>Fall break (No class)</td>
+          <td></td>
+        </tr><tr>
+          <td></td>
+          <td>3/13 (Thu)</td>
+          <td>Fall break (No class)</td>
+          <td></td>
+        </tr><tr>
+          <td>17</td>
+          <td>3/18 (Tue)</td>
+          <td>Expanders</td>
+          <td></td>
+        </tr><tr>
+          <td>18</td>
+          <td>3/20 (Thu)</td>
+          <td>Expanders</td>
+          <td></td>
+        </tr><tr>
+          <td>19</td>
+          <td>3/25 (Tue)</td>
+          <td>Expanders - Applications</td>
+          <td></td>
+        </tr><tr>
+          <td>20</td>
+          <td>3/27 (Thu)</td>
+          <td>Expanders - Applications</td>
+          <td></td>
+        </tr><tr>
+          <td>21</td>
+          <td>4/1 (Tue)</td>
+          <td>Communication Complexity</td>
+          <td></td>
+        </tr><tr>
+          <td>22</td>
+          <td>4/3 (Thu)</td>
+          <td>Communication Complexity</td>
+          <td></td>
+        </tr><tr>
+          <td>23</td>
+          <td>4/8 (Tue)</td>
+          <td>Communication Complexity</td>
+          <td></td>
+        </tr><tr>
+          <td>24</td>
+          <td>4/10 (Thu)</td>
+          <td>Communication Complexity</td>
+          <td></td>
+        </tr><tr>
+          <td>25</td>
+          <td>4/15 (Tue)</td>
+          <td>Communication Complexity</td>
+          <td></td>
+        </tr><tr>
+          <td>26</td>
+          <td>4/17 (Thu)</td>
+          <td>Presentation</td>
+          <td></td>
+        </tr><tr>
+          <td>27</td>
+          <td>4/22 (Tue)</td>
+          <td>Presentation</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
 
 <hr/>
 <div id="resources">
   <h2>Resources</h2>
+  <p>References will be provided throughout the course.
 </div>
 <a class="top" href="#">Top</a>
 </body>
