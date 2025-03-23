@@ -3,3 +3,5 @@ markdown: kramdown
 kramdown:
   input: GFM
   math_engine: mathjax
+name: CSC 366 - Design and Analysis of Algorithms
+title: null
