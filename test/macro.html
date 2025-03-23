@@ -1,0 +1,94 @@
+<script>
+  function expandMacros(tex) {
+      function nestBrackets(level) {
+          var level = level || 5, re = c = "(?:[^\\r\\n\\{\\}]|\\\\[\\{\\}]|\\r?\\n(?!\\r?\\n))*?";
+          while (level--) re = c + "(?:\\{" + re + "\}" + c + ")*?";
+          return " *(\\{" + re + "\\}|[^\\{])";
+      }    
+      function getRegExp(name, macro) {
+          var num = macro.num, def = macro.def, re = "";
+          while (num--) re += nestBrackets();
+          re = "\\" + name + "(?![a-zA-Z\\}])" + re;
+          return new RegExp(re, "g");
+      }
+      function trimString(s) {
+          return s.replace(/^ +| +$/g, '').replace(/^\{|\}$/g, "");
+      }
+      function extractMacros() {
+          var cs = "\\\\\\w+", re;
+          // \def, \gdef, \edef and \xdef
+          re = new RegExp("\\\\[gex]?def\\*? *(" + cs + ") *(#\\d)*" + nestBrackets(), "g");
+          tex = tex.replace(re, function(match){
+              var m = arguments;
+              var macro = {
+                  num:  m[2] ? Math.min(m[2].length / 2, 9) : 0,
+                  def:  trimString(m[3])
+              };
+              macros[trimString(m[1])] = macro;
+              return "";
+          });
+          // \newcommand, \newcommand*, \renewcommand and \renewcommand*
+          re = new RegExp("\\\\(?:re)?newcommand\\*? *(" + cs + "|\\{" + cs + "\}) *(\\[(\\d)\\])?"
+                          + nestBrackets(), "g");
+          tex = tex.replace(re, function(match){
+              var m = arguments;
+              var macro = {
+                  num:  m[3] || 0,
+                  def:  trimString(m[4])
+              };
+              macros[trimString(m[1])] = macro;
+              return "";
+          });
+          // \DeclareMathOperator and \DeclareMathOperator* inside amsmath
+          re = new RegExp("\\\\DeclareMathOperator(\\*?) *(" + cs + "|\\{" + cs + "\}) *"
+                          + nestBrackets(), "g");
+          tex = tex.replace(re, function(match){
+              var m = arguments;
+              var macro = {
+                  num:  0,
+                  def:  "\\operatorname" + m[1] + "{" + trimString(m[3]) + "}"
+              };
+              macros[trimString(m[2])] = macro;
+              return "";
+          });
+      }
+      function replaceMacros() {
+          var i = 0, m, re, num;
+          for (name in macros) {
+              m = macros[name];
+              re = getRegExp(name, m), num = m.num;
+              //console.log(re);
+              tex = tex.replace(re, function(match){
+                  //console.log(arguments);
+                  var args = [], result = m.def, k;
+                  for (k = 1; k <= num; k++) {
+                      args[k] = trimString(arguments[k]);
+                  }
+                  //console.log(args);
+                  for (k = 1; k <= num; k++) {
+                      result = result.replace(new RegExp("#" + k, "g"), args[k]);
+                  }
+                  return result;
+              });
+          }
+      }
+      var macros = {};
+      extractMacros();
+      replaceMacros();
+      return tex;
+  }
+  
+</script>
+
+<body>
+  <input type="text" id="input">
+  <input type="text" id="output">
+  <div id="run">run</div>
+  <script>
+      document.getElementById("run").onclick = function() {
+      var input = document.getElementById("input"),
+          output = document.getElementById("output");
+      output.value = expandMacros(input.value);
+  }
+  </script>
+</body>
