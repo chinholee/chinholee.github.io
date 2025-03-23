@@ -22,10 +22,10 @@ CSC316 OR (CSC 226 AND ECE 309)
 - 1 final (Replace lowest quiz)
 - Bonus (X%)
 
-## Exercices
+## Exercises
 
 Written exercises will be provided.  They will not be graded.  Solutions will be provided before quizzes.
 
 ## Quizzes
 
-At least half of the questions will be taken from the list of written exerices.
+At least half of the questions will be taken from the list of written exercises.
