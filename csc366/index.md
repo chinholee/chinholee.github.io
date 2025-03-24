@@ -12,6 +12,8 @@
 
 This course covers the fundamentals in algorithm design and analysis, focusing on the themes of efficient algorithms and intractable problems.  Topics include divide and conquer algorithms, graph algorithms, greedy algorithms, dynamic programming, NP-completeness and reductions.  The course goal is to provide a solid foundation in algorithms for students in preparation for a job in industry and more advanced courses.
 
+[Tentative topics](https://docs.google.com/spreadsheets/d/1X6hj10Pu_uYqfe0C2fZF-kVA_2OSmwFpOe8ZguE8SFE/edit?usp=sharing)
+
 ## Prerequisites
 
 CSC316 OR (CSC 226 AND ECE 309)
