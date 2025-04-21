@@ -1,9 +1,3 @@
-
----
-layout: default
-title: Home
----
-
 <script>
 window.MathJax = {
   tex: {
