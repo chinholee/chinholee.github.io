@@ -1,5 +1,1 @@
-theme: minima
-markdown: kramdown
-kramdown:
-  input: GFM
-  math_engine: mathjax
+remote_theme: pages-themes/minimal@v0.2.0
