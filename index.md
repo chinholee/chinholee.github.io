@@ -34,7 +34,7 @@ If you are interested in my research, feel free to email me and I would be happy
 
 - **Pseudorandomness, symmetry, smoothing: II**  
   Harm Derksen, Peter Ivanov, Chin Ho Lee, Emanuele Viola  
-  [arXiv](https://arxiv.org/abs/2401.00002)
+  [arXiv](https://arxiv.org/abs/2407.12110)
 
 ---
 
@@ -43,57 +43,57 @@ If you are interested in my research, feel free to email me and I would be happy
 - **Trace reconstruction from local statistical queries**  
   Xi Chen, Anindya De, Chin Ho Lee, Rocco A. Servedio  
   RANDOM 2024  
-  [arXiv](https://arxiv.org/abs/2401.00003)
+  [arXiv](https://arxiv.org/abs/2407.11177)
 
 - **Boosting uniformity in quasirandom groups: fast and simple**  
   Harm Derksen, Chin Ho Lee, Emanuele Viola  
   FOCS 2024  
-  [arXiv](https://arxiv.org/abs/2401.00004)
+  [arXiv](https://arxiv.org/abs/2409.06932)
 
 - **Pseudorandomness, symmetry, smoothing: I**  
   Harm Derksen, Peter Ivanov, Chin Ho Lee, Emanuele Viola  
   CCC 2024  
-  [arXiv](https://arxiv.org/abs/2401.00005)
+  [arXiv](https://arxiv.org/abs/2405.13143)
 
 - **On the Power of Regular and Permutation Branching Programs**  
   Chin Ho Lee, Edward Pyne, Salil Vadhan  
   RANDOM 2023  
-  [ECCC](https://eccc.weizmann.ac.il/report/2023/001/)
+  [ECCC](https://eccc.weizmann.ac.il/report/2023/102/)
 
 - **Approximate Trace Reconstruction from a Single Trace**  
   Xi Chen, Anindya De, Chin Ho Lee, Rocco A. Servedio, Sandip Sinha  
   SODA 2023  
-  [arXiv](https://arxiv.org/abs/2401.00006)
+  [arXiv](https://arxiv.org/abs/2211.03292)
 
 - **Fourier Growth of Regular Branching Programs**  
   Chin Ho Lee, Edward Pyne, Salil Vadhan  
   RANDOM 2022  
-  [ECCC](https://eccc.weizmann.ac.il/report/2022/001/)
+  [ECCC](https://eccc.weizmann.ac.il/report/2022/034/)
 
 - **Near-Optimal Average-Case Approximate Trace Reconstruction from Few Traces**  
   Xi Chen, Anindya De, Chin Ho Lee, Rocco A. Servedio, Sandip Sinha  
   SODA 2022  
-  [arXiv](https://arxiv.org/abs/2401.00007)
+  [arXiv](https://arxiv.org/abs/2107.11530)
 
 - **Fourier growth of structured $\mathbb{F}_2$-polynomials and applications**  
   Jarosław Błasiok, Peter Ivanov, Yaonan Jin, Chin Ho Lee, Rocco A. Servedio, Emanuele Viola  
   RANDOM 2021 (Invited to Special Issue)  
-  [arXiv](https://arxiv.org/abs/2401.00008)
+  [arXiv](https://arxiv.org/abs/2107.10797)
 
 - **Fractional Pseudorandom Generators from Any Fourier Level**  
   Eshan Chattopadhyay, Jason Gaitonde, Chin Ho Lee, Shachar Lovett, Abhishek Shetty  
   CCC 2021  
-  [arXiv](https://arxiv.org/abs/2401.00009)
+  [arXiv](https://arxiv.org/abs/2008.01316)
 
 - **Polynomial-time trace reconstruction in the low deletion rate regime**  
   Xi Chen, Anindya De, Chin Ho Lee, Rocco A. Servedio, Sandip Sinha  
   ITCS 2021  
-  [arXiv](https://arxiv.org/abs/2401.00010)
+  [arXiv](https://arxiv.org/abs/2012.02844)
 
 - **Polynomial-time trace reconstruction in the smoothed complexity model**  
   Xi Chen, Anindya De, Chin Ho Lee, Rocco A. Servedio, Sandip Sinha  
   SODA 2021 (Invited to Special Issue)  
-  [arXiv](https://arxiv.org/abs/2401.00011) | [Journal](https://doi.org/10.1137/1.9781611976465.1)
+  [arXiv](https://arxiv.org/abs/2008.12386) | [Journal](https://doi.org/10.1145/3560819)
 
 - **More on bounded independence plus noise: Pseudorandom generators for read-once polynomials**  
   Chin Ho Lee and Emanuele Viola  
@@ -103,12 +103,13 @@ If you are interested in my research, feel free to email me and I would be happy
 - **Fourier bounds and pseudorandom generators for product tests**  
   Chin Ho Lee  
   CCC 2019  
-  [ECCC](https://eccc.weizmann.ac.il/report/2019/001/)
+  [ECCC](https://eccc.weizmann.ac.il/report/2019/017/)
 
 - **Bounded Independence versus Symmetric Tests**  
   Ravi Boppana, Johan Håstad, Chin Ho Lee, Emanuele Viola  
   Transactions on Computation Theory, Volume 11 Issue 4, 2019  
-  [Journal](https://doi.org/10.1145/3365523)
+  (A [preliminary](https://eccc.weizmann.ac.il/report/2016/102/) version using different techniques appeared in *RANDOM 2016*)  
+  [Journal](https://doi.org/10.1145/3337783)
 
 - **The coin problem for product tests**  
   Chin Ho Lee and Emanuele Viola  
