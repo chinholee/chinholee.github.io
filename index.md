@@ -24,7 +24,7 @@ If you are interested in my research, feel free to email me and I would be happy
 ## Teaching
 
 - CSC 491/ECE 492: Design and Analysis of Algorithms (Fall 2024, [Fall 2025](./csc491/))
-- CSC 495/591: CS Theory Toolkit (Fall 2023, [Spring 2025](./csc495/))
+- CSC 495/591: CS Theory Toolkit (Fall 2023, [Spring 2025](./csc591/))
 - CSC 707: Computational Complexity ([Spring 2024](./csc707/), Spring 2026)
 - CS 229BR: Analysis of Boolean Functions ([Fall 2022](./cs229br/)) ([Notes](https://chinholee.github.io/CS229BR_lecture_notes.pdf))
 
