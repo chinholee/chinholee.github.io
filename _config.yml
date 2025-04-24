@@ -1,2 +1,7 @@
 name: ""
-title: null
+title: Chin Ho Lee
+theme: jekyll-theme-minimal
+markdown: kramdown
+kramdown:
+  input: GFM
+  math_engine: mathjax

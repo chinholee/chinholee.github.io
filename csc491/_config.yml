@@ -1,7 +1,6 @@
 title: CSC491/ECE492 - Design and Analysis of Algorithms
 theme: jekyll-theme-minimal
-
 markdown: kramdown
 kramdown:
-  math_engine: mathjax
   input: GFM
+  math_engine: mathjax

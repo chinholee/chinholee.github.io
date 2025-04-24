@@ -1,3 +1,8 @@
+---
+layout: default
+title: CSC 491/ECE 492 - Design and Analysis of Algorithms
+---
+
 # CSC 491/ECE 492 - Design and Analysis of Algorithms[^1]
 
 ## Course Information
@@ -8,6 +13,8 @@
 - Office Hours:  TBD
 - TA/Grader: TBD
 
+---
+
 ## Course Description
 
 This course covers the fundamentals in algorithm design and analysis, focusing on the themes of efficient algorithms and intractable problems.  Topics include divide and conquer algorithms, graph algorithms, greedy algorithms, dynamic programming, NP-completeness and reductions.  The course goal is to provide a solid foundation in algorithms for students in preparation for a job in industry and more advanced courses.
@@ -17,9 +24,13 @@ This course covers the fundamentals in algorithm design and analysis, focusing o
 
 [Can you solve these problems?](examples.md)
 
+---
+
 ## Prerequisites
 
 CSC316 OR (CSC 226 AND ECE 309)
+
+---
 
 ## Evaluation
 
@@ -27,9 +38,13 @@ CSC316 OR (CSC 226 AND ECE 309)
 - 1 written final (20%, optional, replaces lowest quiz)
 - Bonus (∞ %, bonus questions will be posted on Ed from time to time)
 
+---
+
 ## Exercises
 
 A list of written exercises will be provided.  They will not be graded.  Grader/TA will go over the solutions during their office hours.  Solutions will be provided before quizzes.
+
+---
 
 ## Quizzes
 
@@ -41,6 +56,8 @@ If you dispute the grade received for a quiz, you must submit, in writing throug
 
 All regrade requests will be reviewed by the instructor.  Requests of regrade of a specific problem may result in a regrade of the entire assignment. This regrade and written response is final. Keep in mind that a regrade request may result in the overall score for an assignment being lowered.
 
+---
+
 ## Grades
 
 | Range                                  | Letter grade |
@@ -49,5 +66,6 @@ All regrade requests will be reviewed by the instructor.  Requests of regrade of
 | ≥ 30% and ≥ 1 SD below min{60%, AVG}   | C- or above  |
 | ≥ min{60%,AVG}                         | B  or above  |
 | ≥ 1 SD above min{60%,AVG}              | A- or above  |
+
 
 [^1]: The official course titles are CSC 491 - Advanced Algorithms and ECE 492 - Fundamentals of Algorithms.  The former is misleading, but due to well-established bureaucratic procedures, fixing the name takes time and will not happen as of Fall 2025.
