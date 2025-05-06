@@ -17,6 +17,7 @@ window.MathJax = {
 3. [Scheduling](#scheduling)
 4. [Travel](#travel)
 
+---
 
 ## Deadlines
 
@@ -41,6 +42,7 @@ You are a project manager, and your team has a list of tasks that need to be com
 
 [Here](examples/deadlines.in) is a list of 10000 tasks. Each line in the file consists of two integers \\(t_i\\) and \\(d_i\\) representing the time to complete and the deadline for the \\(i\\)-th task, respectively.
 
+---
 
 ## Packing
 
@@ -70,6 +72,8 @@ What is the maximum value of items you can pack?
 
 [Here](examples/packing.in) is a list of 100 items.  Each line in the file consists of two integers \\(w_i\\) and \\(v_i\\) representing the weight and value of the \\(i\\)-th item, respectively.
 
+---
+
 ## Scheduling
 
 You have a project with 8 tasks, and some tasks depend on others to be completed first.  Each day you can run as many tasks as possible simultaneously, as long as their dependencies are met.
@@ -91,6 +95,7 @@ How many days does it take you to complete the project?
 
 [Here](examples/scheduling.in) is a list of 10000 tasks.  Each line in the file consists of two tasks \\(u_i\\) and \\(v_i\\) indicating task \\(v_i\\) depends on task \\(u_i\\).
 
+---
 
 ## Travel
 

@@ -52,7 +52,7 @@ There will be 3-4 questions per quiz.  At least 50% of the points will be taken 
 
 **Regrade policy:**
 
-If you dispute the grade received for a quiz, you must submit, in writing through Gradescope, a detailed and clearly stated argument for what you believe is incorrect and why, within 5 days after the homework was returned to you.
+If you dispute the grade received for a quiz, you must submit, in writing through Gradescope, a detailed and clearly stated argument for what you believe is incorrect and why, within 5 days after the quiz was returned to you.
 
 All regrade requests will be reviewed by the instructor.  Requests of regrade of a specific problem may result in a regrade of the entire assignment. This regrade and written response is final. Keep in mind that a regrade request may result in the overall score for an assignment being lowered.
 
@@ -64,8 +64,9 @@ All regrade requests will be reviewed by the instructor.  Requests of regrade of
 |-------------------------------------------------------|
 | ≥ 30% and ≥ 2 SD below min{60%, AVG}   | D- or above  |
 | ≥ 30% and ≥ 1 SD below min{60%, AVG}   | C- or above  |
-| ≥ min{60%,AVG}                         | B  or above  |
-| ≥ 1 SD above min{60%,AVG}              | A- or above  |
+| ≥ min{60%, AVG}                         | B  or above  |
+| ≥ 1 SD above min{60%, AVG}              | A- or above  |
 
+---
 
 [^1]: The official course titles are CSC 491 - Advanced Algorithms and ECE 492 - Fundamentals of Algorithms.  The former is misleading, but due to well-established bureaucratic procedures, fixing the name takes time and will not happen as of Fall 2025.

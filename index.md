@@ -13,11 +13,11 @@ I am an assistant professor at the [Computer Science Department](https://www.csc
 
 Before joining NCSU, I was a postdoc at [Harvard University](https://www.harvard.edu) from 2021–2023 and [Columbia University](https://www.columbia.edu) from 2019–2021. I received my PhD at [Northeastern University](https://www.northeastern.edu), and my Masters and Bachelor at the [Chinese University of Hong Kong (CUHK)](https://www.cuhk.edu.hk).
 
-**Research interests:** Theoretical Computer Science — randomness in computation, pseudorandomness, Boolean functions, trace reconstruction.
+**Research interests:** Theoretical Computer Science — randomness in computation, pseudorandomness, Boolean functions.
 
 ---
 
-If you are interested in my research, feel free to email me and I would be happy to chat with you more about it. If you would like to do theory research with me, you must be proficient in discrete math and basic probability.
+If you're an NCSU student interested in doing research with me, you'll need to take a course with me first — GPA doesn't matter.  Note that my research requires a strong background in discrete math and basic probability.
 
 ---
 
@@ -39,6 +39,10 @@ If you are interested in my research, feel free to email me and I would be happy
 ---
 
 ## Publications
+
+- **Pseudorandom bits for non-commutative programs**
+  Chin Ho Lee, Emanuele Viola
+  CCC 2025  
 
 - **Trace reconstruction from local statistical queries**  
   Xi Chen, Anindya De, Chin Ho Lee, Rocco A. Servedio  
@@ -96,7 +100,7 @@ If you are interested in my research, feel free to email me and I would be happy
   [arXiv](https://arxiv.org/abs/2008.12386) | [Journal](https://doi.org/10.1145/3560819)
 
 - **More on bounded independence plus noise: Pseudorandom generators for read-once polynomials**  
-  Chin Ho Lee and Emanuele Viola  
+  Chin Ho Lee, Emanuele Viola  
   Theory of Computing, Volume 16 (7), 2020  
   [Journal](https://doi.org/10.4086/toc.2020.v016a007)
 
@@ -112,7 +116,7 @@ If you are interested in my research, feel free to email me and I would be happy
   [Journal](https://doi.org/10.1145/3337783)
 
 - **The coin problem for product tests**  
-  Chin Ho Lee and Emanuele Viola  
+  Chin Ho Lee, Emanuele Viola  
   Transactions on Computation Theory, Volume 10, Issue 3, 2018  
   [Journal](https://doi.org/10.1145/3201787)
  
