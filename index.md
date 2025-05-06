@@ -40,8 +40,8 @@ If you're an NCSU student interested in doing research with me, you'll need to t
 
 ## Publications
 
-- **Pseudorandom bits for non-commutative programs**
-  Chin Ho Lee, Emanuele Viola
+- **Pseudorandom bits for non-commutative programs**  
+  Chin Ho Lee, Emanuele Viola  
   CCC 2025  
 
 - **Trace reconstruction from local statistical queries**  
