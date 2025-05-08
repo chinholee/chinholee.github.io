@@ -9,7 +9,7 @@ title: Chin Ho Lee
 **Office:** Engineering Building II (EB2), Room 3292  
 **Address:** 890 Oval Drive, Box 8206, Raleigh, NC 27695
 
-I am an assistant professor at the [Computer Science Department](https://www.csc.ncsu.edu) of [North Carolina State University](https://www.ncsu.edu).
+I am an assistant professor at the [Computer Science Department](https://www.csc.ncsu.edu) of [North Carolina State University](https://www.ncsu.edu).  I am member of the [theory group](https://ncsu-theory-lab.github.io/).
 
 Before joining NCSU, I was a postdoc at [Harvard University](https://www.harvard.edu) from 2021–2023 and [Columbia University](https://www.columbia.edu) from 2019–2021. I received my PhD at [Northeastern University](https://www.northeastern.edu), and my Masters and Bachelor at the [Chinese University of Hong Kong (CUHK)](https://www.cuhk.edu.hk).
 
