@@ -43,6 +43,8 @@ If you're an NCSU student interested in doing research with me, you'll need to t
 - **Pseudorandom bits for non-commutative programs**  
   Chin Ho Lee, Emanuele Viola  
   CCC 2025  
+  [ECCC](https://eccc.weizmann.ac.il/report/2025/071/)
+
 
 - **Trace reconstruction from local statistical queries**  
   Xi Chen, Anindya De, Chin Ho Lee, Rocco A. Servedio  
