@@ -10,8 +10,9 @@ title: CSC 491/ECE 492 - Design and Analysis of Algorithms
 - Instructor: [Chin Ho Lee](https://chinholee.github.io/) (chinho.lee@ncsu.edu)
 - Lectures: Tuesday and Thursday 3:00pm-4:15pm
 - Location: EB2 1228
-- Office Hours:  Monday 3pm-4:15pm and Tuesday 4:15pm-5:30pm
-- TA/Grader: TBD
+- Office Hours:  Monday 3pm-4:15pm and Tuesday 4:15pm-5:30pm @ EB2 3292
+- TA/Grader: Tanvin Kalra
+- TA/Grader Office Hours: Thursday 1:15pm-2:45pm @ EB2 1229B
 
 ---
 
