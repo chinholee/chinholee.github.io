@@ -19,6 +19,9 @@ Before joining NCSU, I was a postdoc at [Harvard University](https://www.harvard
 
 If you're an NCSU student interested in doing research with me, you'll need to take a course with me first — GPA doesn't matter.  Note that my research requires a strong background in discrete math and basic probability.
 
+
+This Fall semester, I am organizing a weekly reading group on randomness in computing.  See [here](https://docs.google.com/spreadsheets/d/1bVn43sZ7rSKBvBRfx1KR3n7U9e24-ZmscwNfT8R1w7Q/edit?gid=1038902541#gid=1038902541) for more details.
+
 ---
 
 ## Teaching
