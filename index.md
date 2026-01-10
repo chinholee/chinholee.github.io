@@ -19,21 +19,22 @@ Before joining NCSU, I was a postdoc at [Harvard University](https://www.harvard
 
 If you're an NCSU student interested in doing research with me, you'll need to take a course with me first — GPA doesn't matter.  Note that my research requires a strong background in discrete math and basic probability.
 
-
-This Fall semester, I am organizing a weekly reading group on randomness in computing.  See [here](https://docs.google.com/spreadsheets/d/1bVn43sZ7rSKBvBRfx1KR3n7U9e24-ZmscwNfT8R1w7Q/edit?gid=1038902541#gid=1038902541) for more details.
-
 ---
 
 ## Teaching
 
-- CSC 491/ECE 492: Design and Analysis of Algorithms (Fall 2024, [Fall 2025](./csc491/))
+- CSC 707: Computational Complexity (Spring 2024, [Spring 2026](./csc707/))
+- CSC 366/ECE 366: Design and Analysis of Algorithms (Fall 2024, [Fall 2025](./csc366/))
 - CSC 495/591: CS Theory Toolkit (Fall 2023, [Spring 2025](./csc591/))
-- CSC 707: Computational Complexity ([Spring 2024](./csc707/), Spring 2026)
 - CS 229BR: Analysis of Boolean Functions ([Fall 2022](./cs229br/)) ([Notes](https://chinholee.github.io/CS229BR_lecture_notes.pdf))
 
 ---
 
 ## Preprints
+
+- **Constant-time source decoding**  
+   Jordan Horacsek, Chin Ho Lee, Igor Shinkar, Emanuele Viola, Renfei Zhou  
+  [ECCC](https://eccc.weizmann.ac.il/report/2025/164/)
 
 - **Pseudorandomness, symmetry, smoothing: II**  
   Harm Derksen, Peter Ivanov, Chin Ho Lee, Emanuele Viola  
@@ -145,3 +146,9 @@ This Fall semester, I am organizing a weekly reading group on randomness in comp
   Andrej Bogdanov, Chin Ho Lee  
   CRYPTO 2013   
   [ECCC](https://eccc.weizmann.ac.il/report/2012/156/)
+
+---
+
+## Professional activities:
+
+- Program Commitees: FOCS 2026, RANDOM 2026

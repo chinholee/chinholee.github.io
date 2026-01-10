@@ -1,4 +1,5 @@
-theme: minima
+title: CSC491/ECE492 - Design and Analysis of Algorithms
+theme: jekyll-theme-minimal
 markdown: kramdown
 kramdown:
   input: GFM

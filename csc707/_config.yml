@@ -1,0 +1,6 @@
+title: CSC 707 - Automata, Languages and Computability Theory 
+theme: jekyll-theme-minimal
+markdown: kramdown
+kramdown:
+  input: GFM
+  math_engine: mathjax

@@ -1,3 +1,15 @@
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+  }
+};
+</script>
+<script type="text/javascript" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
 # Example Problems
 
 1. [Deadlines](#deadlines)
@@ -5,6 +17,7 @@
 3. [Scheduling](#scheduling)
 4. [Travel](#travel)
 
+---
 
 ## Deadlines
 
@@ -27,8 +40,9 @@ You are a project manager, and your team has a list of tasks that need to be com
 
 **What if there are 10000 tasks?**
 
-[Here](examples/deadlines.in) is a list of 10000 tasks. Each line in the file consists of two integers $t_i$ and $d_i$ representing the time to complete and the deadline for the $i$-th task, respectively.
+[Here](examples/deadlines.in) is a list of 10000 tasks. Each line in the file consists of two integers \\(t_i\\) and \\(d_i\\) representing the time to complete and the deadline for the \\(i\\)-th task, respectively.
 
+---
 
 ## Packing
 
@@ -56,7 +70,9 @@ What is the maximum value of items you can pack?
 
 **What if there are 100 items?**
 
-[Here](examples/packing.in) is a list of 100 items.  Each line in the file consists of two integers $w_i$ and $v_i$ representing the weight and value of the $i$-th item, respectively.
+[Here](examples/packing.in) is a list of 100 items.  Each line in the file consists of two integers \\(w_i\\) and \\(v_i\\) representing the weight and value of the \\(i\\)-th item, respectively.
+
+---
 
 ## Scheduling
 
@@ -77,8 +93,9 @@ How many days does it take you to complete the project?
 
 **What if there are 10000 tasks?**
 
-[Here](examples/scheduling.in) is a list of 10000 tasks.  Each line in the file consists of two tasks $u_i$ and $v_i$ indicating task $v_i$ depends on task $u_i$.
+[Here](examples/scheduling.in) is a list of 10000 tasks.  Each line in the file consists of two tasks \\(u_i\\) and \\(v_i\\) indicating task \\(v_i\\) depends on task \\(u_i\\).
 
+---
 
 ## Travel
 
@@ -91,4 +108,4 @@ How to minimize the total distance traveled?
 
 **What if there are 20 cities?**
 
-[Here](examples/travel.in) is a list of distances between the 20 cities.  Each line consists of three integers $u_i$, $v_i$, and $d_i$ indicating the distance between $u_i$ and $v_i$ is $d_i$.
+[Here](examples/travel.in) is a list of distances between the 20 cities.  Each line consists of three integers \\(u_i\\), \\(v_i\\), and \\(d_i\\) indicating the distance between \\(u_i\\) and \\(v_i\\) is \\(d_i\\).
