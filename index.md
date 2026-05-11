@@ -32,10 +32,6 @@ If you're an NCSU student interested in doing research with me, you'll need to t
 
 ## Preprints
 
-- **Constant-time source decoding**  
-   Jordan Horacsek, Chin Ho Lee, Igor Shinkar, Emanuele Viola, Renfei Zhou  
-  [ECCC](https://eccc.weizmann.ac.il/report/2025/164/)
-
 - **Pseudorandomness, symmetry, smoothing: II**  
   Harm Derksen, Peter Ivanov, Chin Ho Lee, Emanuele Viola  
   [arXiv](https://arxiv.org/abs/2407.12110)
@@ -43,6 +39,12 @@ If you're an NCSU student interested in doing research with me, you'll need to t
 ---
 
 ## Publications
+
+- **Local Samplers for Product Distributions**  
+   Jordan Horacsek, Chin Ho Lee, Igor Shinkar, Emanuele Viola, Renfei Zhou  
+   ICALP 2026  
+  [ECCC](https://eccc.weizmann.ac.il/report/2025/164/)
+
 
 - **Pseudorandom bits for non-commutative programs**  
   Chin Ho Lee, Emanuele Viola  
