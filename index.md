@@ -6,7 +6,7 @@ title: Chin Ho Lee
 # Chin Ho Lee
 
 **Email:** chinho.lee@ncsu.edu  
-**Office:** Engineering Building II (EB2), Room 3292  
+**Office:** Koch Hall (EB2), Room 3292  
 **Address:** 890 Oval Drive, Box 8206, Raleigh, NC 27695
 
 I am an assistant professor at the [Computer Science Department](https://www.csc.ncsu.edu) of [North Carolina State University](https://www.ncsu.edu).  I am member of the [theory group](https://ncsu-theory-lab.github.io/).
