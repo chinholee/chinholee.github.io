@@ -32,8 +32,16 @@ If you're an NCSU student interested in doing research with me, you'll need to t
 
 ## Preprints
 
+- **Exponential Correlation Bounds for Polynomials**  
+   Eshan Chattopadhyay, Pooya Hatami, Chin Ho Lee, Shachar Lovett, Avishay Tal, Emanuele Viola  
+  [arXiv](https://arxiv.org/abs/2609.28839)
+
+- **Pseudorandom Bits for Low-Degree Modular Polynomials**  
+   Chin Ho Lee, Shachar Lovett, Tejas Nareddy, Emanuele Viola  
+  [ECCC](https://eccc.weizmann.ac.il/report/2026/251/)
+
 - **Pseudorandomness, symmetry, smoothing: II**  
-  Harm Derksen, Peter Ivanov, Chin Ho Lee, Emanuele Viola  
+   Harm Derksen, Peter Ivanov, Chin Ho Lee, Emanuele Viola  
   [arXiv](https://arxiv.org/abs/2407.12110)
 
 ---
